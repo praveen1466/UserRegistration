@@ -22,3 +22,17 @@ then
 else
         echo "Lastname is Invalid"
 fi
+
+
+
+echo "Enter Email "
+read email
+emailRegex="^[a-zA-Z0-9]+([.\-_+][0-9a-zA-Z]+)*@[0-9a-zA-Z]+.[a-zZ-Z]{2,4}([\.][a-zA-Z]{2})*$"
+
+if [[ $email =~ $emailRegex ]]
+then
+	echo "$email is Valid"
+else
+	echo "$email is Not valid"
+fi
+
