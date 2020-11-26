@@ -10,3 +10,15 @@ then
 else
 	echo "firstName is Invalid.. Type Another name"
 fi
+
+
+echo "Enter the lastName "
+read lastName
+lastNameRegex="^[A-Z][a-z]{2,}$"
+
+if [[ $lastName =~ $lastNameRegex ]]
+then
+        echo "Lastname is valid"
+else
+        echo "Lastname is Invalid"
+fi
