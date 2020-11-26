@@ -36,3 +36,17 @@ else
 	echo "$email is Not valid"
 fi
 
+
+
+
+
+echo "Enter Phone Number"
+read phoneNumber
+phoneRegex="^91 [6-9]{1}[0-9]{9}$"
+
+if [[ $phoneNumber =~ $phoneRegex ]]
+then
+	echo "$phoneNumber is Valid"
+else
+	echo "$phoneNumber is Not valid"
+fi
