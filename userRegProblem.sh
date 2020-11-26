@@ -57,11 +57,11 @@ fi
 
 echo "Enter the Password"
 read paasword
-passwordRegex="[a-zA-Z]{8,}"
+passwordRegex="^(?=.{8,}$)(?=.*[A-Z])[a-zA-Z]*"
 
 if [[ $password =~ $passwordRegex ]]
 then
 	echo "$password is Valid"
 else
-	echo "$password Invalid"
+	echo "$password is Not Valid"
 fi
