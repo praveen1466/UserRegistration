@@ -57,7 +57,7 @@ fi
 
 echo "Enter the Password"
 read paasword
-passwordRegex="^(?=.{8,}$)(?=.*[A-Z])[a-zA-Z]*"
+passwordRegex="^(?=.{8,}$)(?=.*?[0-9])(?=.*[A-Z])[0-9a-zA-Z]*"
 
 if [[ $password =~ $passwordRegex ]]
 then
