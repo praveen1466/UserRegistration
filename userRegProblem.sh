@@ -50,3 +50,18 @@ then
 else
 	echo "$phoneNumber is Not valid"
 fi
+
+
+
+
+
+echo "Enter the Password"
+read paasword
+passwordRegex="[a-zA-Z]{8,}"
+
+if [[ $password =~ $passwordRegex ]]
+then
+	echo "$password is Valid"
+else
+	echo "$password Invalid"
+fi
